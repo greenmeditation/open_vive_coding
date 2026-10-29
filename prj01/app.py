@@ -30,7 +30,7 @@ MISSIONS = {
 @st.cache_data
 def load_products():
     try:
-        df = pd.read_csv('https://raw.githubusercontent.com/greenmeditation/open_vive_coding/refs/heads/main/prj01/products.csv')
+        df = pd.read_csv('products.csv')
     except Exception:
         # 파일이 없을 시 예시 데이터 생성
         sample_data = {
